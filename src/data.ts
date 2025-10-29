@@ -16,7 +16,16 @@ import {
   editDistance,
   reverseStringMetadata,
   reverseString,
+  activitySelectionMetadata,
+  activitySelection,
+  allSumCombination,
+  allSumCombinationMetadata,
+  climbStairs,
+  climbStairsMetadata,
+  coinChange,
+  coinChangeMetadata,
 } from './questions';
+import { threeSum, threeSumMetadata } from './questions/medium/ThreeSum';
 
 export const codingQuestions: CodingQuestion[] = [
   // Easy Problems
@@ -54,5 +63,25 @@ export const codingQuestions: CodingQuestion[] = [
   {
     ...editDistanceMetadata,
     solution: editDistance,
+  },
+  {
+    ...activitySelectionMetadata,
+    solution: activitySelection,
+  },
+  {
+    ...threeSumMetadata,
+    solution: threeSum,
+  },
+  {
+    ...coinChangeMetadata,
+    solution: coinChange,
+  },
+  {
+    ...climbStairsMetadata,
+    solution: climbStairs,
+  },
+  {
+    ...allSumCombinationMetadata,
+    solution: allSumCombination,
   },
 ];
