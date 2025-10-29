@@ -24,6 +24,8 @@ import {
   climbStairsMetadata,
   coinChange,
   coinChangeMetadata,
+  compressString,
+  compressStringMetadata,
 } from './questions';
 import { threeSum, threeSumMetadata } from './questions/medium/ThreeSum';
 
@@ -83,5 +85,9 @@ export const codingQuestions: CodingQuestion[] = [
   {
     ...allSumCombinationMetadata,
     solution: allSumCombination,
+  },
+  {
+    ...compressStringMetadata,
+    solution: compressString,
   },
 ];
